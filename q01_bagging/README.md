@@ -1,5 +1,4 @@
 # Let's start Ensembling Methods with Bagging
-***
 
 - In class, we learned about the Bagging and now its time to practice it.
 
