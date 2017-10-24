@@ -5,7 +5,7 @@
 ## Write a function bagging that:
 
 - Takes input the features and target with default parameters.
-- Then fits a bagging classifier with DecisionTreeClassifier with multiple n-estimators values such as in between 20-300.
+- Then fits a bagging classifier with DecisionTreeClassifier with multiple n-estimators values such as in between 1-30.
 - Plot a graph with n-estimators and the accuracy of model.
 - Use random_state 9 and bootstrap=True
 
