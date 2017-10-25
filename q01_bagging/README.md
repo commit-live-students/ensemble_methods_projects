@@ -6,7 +6,7 @@
 
 - Takes input the features and target with default parameters.
 - Then fits a bagging classifier with DecisionTreeClassifier with multiple n-estimators values such as in between 1-50.
-- Plot a graph with n-estimators and the accuracy of model.
+- Plot a graph with n-estimators and the accuracy of model for train and test sets.
 - Use random_state 9 and bootstrap=True
 
 ### Parameters:
