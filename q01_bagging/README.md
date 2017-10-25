@@ -24,3 +24,5 @@ None
 
 
 Note : Please Compare your plot with the bagging_1.png in the images directory
+
+https://github.com/commit-live-students/ensemble_methods_projects/blob/master/images/bagging_1.png
