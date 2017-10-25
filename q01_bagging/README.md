@@ -1,6 +1,6 @@
 # Let's start Ensembling Methods with Bagging
 
-- In this assignment you will learn to build a BaggingClassifier using DecisionTreeClassifier.
+- In this assignment you will learn to build a BaggingClassifier with DecisionTreeClassifier.
 
 ## Write a function bagging that:
 
