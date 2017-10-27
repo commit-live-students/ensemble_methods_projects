@@ -8,6 +8,7 @@
 - Then fits a bagging classifier with DecisionTreeClassifier with multiple n-estimators values such as in between 1-50.
 - Plot a graph with n-estimators and the accuracy of model for train and test sets.
 - Use random_state 9 and bootstrap=True
+- Use max_samples and max_features to 0.67
 
 ### Parameters:
 
