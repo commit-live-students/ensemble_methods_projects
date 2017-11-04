@@ -16,5 +16,21 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 # Write your code here
 
 
+n_est=[1,10,20,30,40,50]
+# Write your code here
+def bagging(X_train, X_test, y_train, y_test,n_est):
+    values=[]
+    values_tr=[]
+    for val in n_est:
+        model=BaggingClassifier(base_estimator=None, n_estimators=val, max_samples=0.67, max_features=0.67, bootstrap=True, random_state=9)
+        model.fit(X_train,y_train)
+        ypred=model.predict(X_test)
+        xpred=model.predict(X_train)
+        ac=accuracy_score(y_test,ypred)
+        actr=accuracy_score(y_train,xpred)
+        values.append(ac)
+        values_tr.append(actr)
+    plt.plot(n_est,values)
 
-
+    plt.plot(n_est,values_tr)
+    #plt.show()
