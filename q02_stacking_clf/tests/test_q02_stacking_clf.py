@@ -28,18 +28,20 @@ model = [bagging_clf1, bagging_clf2, bagging_clf3]
 
 
 class TestStacking_clf(TestCase):
-    def test_stacking_clf(self):
-
-        # Input parameters tests
+    def test_stacking_clf(self):  # Input parameters tests
         args = getargspec(stacking_clf)
         self.assertEqual(len(args[0]), 5, "Expected arguments %d, Given %d" % (5, len(args[0])))
+
+    def test_stacking_clf(self):  # Input parameters default
+        args = getargspec(stacking_clf)
         self.assertEqual(args[3], None, "Expected default values do not match given default values")
 
-        # Return data types
+    def test_stacking_clf_return_type(self):  # Return data types
         accuracy = stacking_clf(model, X_train, y_train, X_test, y_test)
         self.assertIsInstance(accuracy, float,
                               "Expected data type for return value is `pandas DataFrame`, you are returning %s" % (
                                   type(accuracy)))
 
-        # Return value tests
+    def test_stacking_clf_return_values(self):  # Return value tests
+        accuracy = stacking_clf(model, X_train, y_train, X_test, y_test)
         self.assertAlmostEqual(accuracy, 0.745945945946, 3, "Return value does not match expected value")
