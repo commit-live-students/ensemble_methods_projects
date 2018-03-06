@@ -1,6 +1,6 @@
 from unittest import TestCase
 from ..build import stacking_clf
-from inspect import getargspec
+from inspect import getfullargspec
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
@@ -29,11 +29,11 @@ model = [bagging_clf1, bagging_clf2, bagging_clf3]
 
 class TestStacking_clf(TestCase):
     def test_stacking_clf(self):  # Input parameters tests
-        args = getargspec(stacking_clf)
+        args = getfullargspec(stacking_clf)
         self.assertEqual(len(args[0]), 5, "Expected arguments %d, Given %d" % (5, len(args[0])))
 
     def test_stacking_clf(self):  # Input parameters default
-        args = getargspec(stacking_clf)
+        args = getfullargspec(stacking_clf)
         self.assertEqual(args[3], None, "Expected default values do not match given default values")
 
     def test_stacking_clf_return_type(self):  # Return data types
