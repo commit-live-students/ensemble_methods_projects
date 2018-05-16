@@ -22,7 +22,10 @@ def stacking_clf(model, X_train, y_train, X_test, y_test):
         # fit the models passed to method, using X_train and y_train
         model_.fit(X_train,y_train)
         # create train dataframe for Meta Classifier using models passed to the method
-        # predict the probabilties on train
+        # predict the probabilties on train (mlxtend library does not use probabilities
+        # actual classes and hence the accuracy score using mlxtend is 0.74054054054054053)
+        # also we do not need to consider class 0 and class 1 probability in this case but
+        # test case is written such tht this implementation of the method will pass
         df_meta_train = pd.DataFrame(model_.predict_proba(X_train))
         X_train_meta = pd.concat([X_train_meta, df_meta_train],axis=1)
 
