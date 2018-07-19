@@ -4,6 +4,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import BaggingClassifier
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
+plt.switch_backend('agg')
 
 # Data Loading
 dataframe = pd.read_csv('data/loan_prediction.csv')
