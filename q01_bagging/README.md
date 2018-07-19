@@ -2,7 +2,7 @@
 
 - In this assignment you will learn to build a BaggingClassifier with DecisionTreeClassifier.
 
-## Write a function bagging that:
+## Write a function `bagging` that:
 
 - Takes input the features and target with default parameters.
 - Then fits a bagging classifier with DecisionTreeClassifier with multiple n-estimators values such as in between 1-50.
