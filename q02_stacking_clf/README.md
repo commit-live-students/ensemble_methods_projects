@@ -18,11 +18,11 @@ Note :- Before writing your solution define the parameters and model as mentione
 
 | Parameter | dtype | argument type | default value | description |
 | --- | --- | --- | --- | --- |
-| X_train | DataFrame | compulsory | | Dataframe containing feature variables for training|
-| X_test | DataFrame | compulsory | | Dataframe containing feature variables for testing|
-| y_train | Series/DataFrame | compulsory | | Training dataset target Variable |
-| y_test | Series/DataFrame | compulsory | | Testing dataset target Variable |
 | model |  | compulsory | | Contains three model that have mention |
+| X_train | DataFrame | compulsory | | Dataframe containing feature variables for training|
+| y_train | Series/DataFrame | compulsory | | Training dataset target Variable |
+| X_test | DataFrame | compulsory | | Dataframe containing feature variables for testing|
+| y_test | Series/DataFrame | compulsory | | Testing dataset target Variable |
 
 ### Return parameter:
 
